@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+    font-family: 'Work Sans', sans-serif;
+}
+.bookmark_section{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookmark_container{
+    width: 90%;
+    /* margin: 0 auto; */
+    display: grid;
+    gap: 20px;
+    grid-template-columns:40% 60%;
+    justify-content: space-between;
+    
+}
+.form_container{
+    position: relative;
+    background-color: white;
+    box-shadow: -2px -2px 5px 0px rgba(227, 227, 227, 1);
+    border-radius: 10px;
+    padding: 10px;
+}
+.container div{
+    padding: 5px;
+}
+h1{
+    /* text-align: center; */
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 20px;
+}
+form div{
+    margin: 5px;
+    padding: 5px;
+}
+label{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+input{
+    background-color: transparent;
+    border: whitesmoke 1px solid;
+    /* display: flex; */
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+input:focus {
+    background-color: aquamarine;
+    border: none;
+}
+.submit_btn input{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold; 
+}
+.submit_btn input:hover{
+    background-color: rgb(134, 248, 134);
+}
+
+.table_container{
+    min-width: 700px;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+}
+
+table{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    border-collapse: collapse;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+thead{
+    text-align: left;
+    background-color: rgb(2, 2, 37);
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #e2e3e3;
+}
+th{
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 25px;
+}
+td{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+.tdWithBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+#btn_td{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+button{
+    border: none;    
+    background-color: transparent !important;
+}
+.icon{
+    background-color: transparent !important;
+    font-size: 20px;
+    margin: 5px;
+    color: rgb(250, 132, 132);
+}
+.icon:hover{
+    color: red;
+    
+}
+.edit{
+    color: green;
+}
+.edit:hover{
+    color: greenyellow;
+}
+.editRowBg{
+    background-color: grey !important;
+}
+.clear_btn_container{
+    position: absolute;
+    width: 100%;
+    display: none;
+    margin-bottom: 10px;
+    bottom: 0;
+    justify-content: center;
+}
+.show_clearBtn{
+    display: flex;
+}
+.clear_btn{
+    background-color: transparent;
+    color: rgb(250, 132, 132);
+    cursor: pointer;
+    margin: 10px;
+    /* padding: 10px 20px; */
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.clear_btn:hover{
+    color: rgb(249, 42, 42);
+}
+
+/* my trademark */
+#iamadev_section {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0 auto;
+    font-weight: bolder;
+    text-align: center;
+    bottom: 0%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#iamadev_section a {
+    text-decoration: none;
+}
+
+#iamadev p {
+    color: red;
+}
+#iamadev span {
+    color: blue;
+}
+#white{
+    color: white;
+}
+.fa-heart{
+    color: red;
+}
+
+@media (max-width:1050px) {
+    .bookmark_container{
+        grid-template-columns: auto;
+    }
+    .form_container{
+        width: 100%;
+    }
+    .table_container{
+        width: 100%;
+    }
+    th{
+        padding: 5px;
+        font-size: 15px;
+    }
+    .clear_btn_container{
+        position: relative;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookmark</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<!-- <link rel="stylesheet" href="css/all.css" /> -->
+		<script
+			src="https://kit.fontawesome.com/e306afbf76.js"
+			crossorigin="anonymous"
+		></script>
+		<style>
+			.success,
+			.error {
+				color: white;
+				padding: 5px;
+				margin: 5px 0 15px 0;
+			}
+			.success {
+				background-color: green;
+			}
+			.error {
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="bookmark_section">
+			<div class="bookmark_container">
+				<div class="form_container">
+					<h1>Add Book</h1>
+					<form id="book_form">
+						<div>
+							<label for="author">Author</label>
+							<input type="text" id="author" />
+						</div>
+						<div>
+							<label for="bookName">Book Title</label>
+							<input type="text" id="book_Name" />
+						</div>
+						<div>
+							<label for="isbn">ISBN</label>
+							<input type="text" id="isbn" />
+						</div>
+						<div>
+							<label for="date">Date Published</label>
+							<input type="text" id="date" />
+						</div>
+						<div class="submit_btn">
+							<input id="submitBtn" type="submit" value="SUBMIT" />
+						</div>
+					</form>
+				</div>
+				<div class="table_container">
+					<table>
+						<thead>
+							<tr>
+								<th>Author</th>
+								<th>Book Title</th>
+								<th>isbn</th>
+								<th>Date Published</th>
+							</tr>
+						</thead>
+						<!-- <tr class="sample">
+							<tr>
+								<td>Adebayo ademolekun</td>
+								<td>Role of leadership in technical work</td>
+								<td>200</td>
+								<td class="tdWithBtn">
+									<p>2000</p>
+									<div id="btn_td">
+										<button class="edit-btn">
+											<i class="fa far fa-edit edit icon"></i>
+										</button>
+										<button class="delete_btn">
+											<i class="fa fa-trash delete icon"></i>
+										</button>
+									</div>
+								</td>
+							</tr>
+						</tr> -->
+						<tbody id="book_list"></tbody>
+					</table>
+					<div class="clear_btn_container">
+						<button class="clear_btn" onclick="clearTable()">
+							Clear table
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="iamadev_section">
+			<a href="https://github.com/devAbdulsalam" target="_blank">
+			<p id="white">Made with <i class="fa fa-heart"></i> by</p>
+			<div id="iamadev">
+					<p>!<span>Your</span>regular<span>Dev</span>.js</p>
+				</a>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
